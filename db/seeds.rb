@@ -10,3 +10,10 @@
     confirmed_at: DateTime.now
   )
 end
+
+7.times do
+  Article.create!(
+    title: Faker::Movie.title,
+    user: User.all.sample
+  )
+end

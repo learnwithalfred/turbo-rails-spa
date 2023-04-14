@@ -14,8 +14,55 @@
  *= require_self
  */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .main-container {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 /* ====== */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#container {
+  display: flex;
+  min-height: 95vh;
+}
+#left {
+  width: 25%;
+  padding: 24px;
+  background-color: rgb(225, 223, 223);
+}
+#right {
+  padding: 20px;
+  width: 75%;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  margin: 10px 0;
+  width: 200px;
+  padding: 0.5rem 1rem;
+}
