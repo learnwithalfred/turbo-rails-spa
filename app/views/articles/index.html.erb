@@ -1,6 +1,8 @@
 <div id="container">
   <div id="left">
-    <%= link_to "New article", new_article_path %>
+    <%= turbo_frame_tag "test_frame" do %>
+     <%= link_to "New article", new_article_path %>
+    <% end %>
   </div>
   <div id="right">
     <h1>
