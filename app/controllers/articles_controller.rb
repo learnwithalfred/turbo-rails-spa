@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   
   # GET /articles or /articles.json
   def index
-    @articles = Article.all
+    @articles = Article.order(created_at: :desc)
   end
 
   # GET /articles/1 or /articles/1.json
@@ -27,8 +27,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.save
-        format.html { redirect_to article_url(@article), notice: "Article was successfully created." }
-        format.json { render :show, status: :created, location: @article }
+        format.turbo_stream
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @article.errors, status: :unprocessable_entity }
@@ -54,8 +53,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to articles_url, notice: "Article was successfully destroyed." }
-      format.json { head :no_content }
+      format.turbo_stream { render turbo_stream: turbo_stream.remove(@article) }
     end
   end
 
