@@ -1,13 +1,17 @@
 <div id="container">
   <div id="left">
-    <%= turbo_frame_tag "first_link" do %>
-     <%= link_to "New article", new_article_path %>
-    <% end %>
+    <%= link_to "New Article", new_article_path, data: {turbo_frame: dom_id(Article.new)} %>
+
+    <div>
+			<%= turbo_frame_tag Article.new %>
+		</div>
   </div>
   <div id="right">
     <h1>
       Articles
     </h1>
-    <%= render @articles %>
+    <%= turbo_frame_tag "articles" do %>
+      <%= render @articles %>
+     <% end %>
   </div>
 </div>
