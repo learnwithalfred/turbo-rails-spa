@@ -1,10 +1,16 @@
+<%= turbo_frame_tag article do %>
+
 <div class="article" id="<%= dom_id article %>">
   <p>
-    <%= article.title %>
+		 <%= link_to article.title,
+                article_path(article),
+                data: { turbo_frame: "_top" } %>
   </p>
   <div class="buttons">
     <%= link_to "Edit", edit_article_path(article) %>
-    <%= button_to "Delete", article_path(article), method: :delete %>
+    <%= button_to "Delete", article_path(article),
+                data: { turbo_frame: "_top" }, method: :delete %>
   </div>
 
 </div>
+<% end %>
