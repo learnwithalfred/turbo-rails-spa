@@ -2,7 +2,7 @@ Language
 
 - Name
 
-Category (beginner, intermediate, advanced)
+Category (beginner, intermediate)
 
 - name
 
@@ -25,7 +25,9 @@ Lesson
 - Description
 - URL
 - Section_id
+
   User
+
 - Name
 - Email
 - Password
