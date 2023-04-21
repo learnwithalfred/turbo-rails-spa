@@ -205,7 +205,6 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-
 👤 **Alfred Boateng**
 
 - GitHub: [@learnwithalfred](https://github.com/learnwithalfred)
@@ -285,5 +284,3 @@ I would like to thank...
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
