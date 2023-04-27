@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
 
   <br/>
 
-  <h3><b>Ruby on Rails Auth Devise Starter Template</b></h3>
+  <h3><b>Ruby on Rails Starter with Auth and Devise setup</b></h3>
 
 </div>
 
