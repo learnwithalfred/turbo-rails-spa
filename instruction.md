@@ -26,7 +26,7 @@ Lesson
 - URL
 - Section_id
 
-  User
+User
 
 - Name
 - Email
